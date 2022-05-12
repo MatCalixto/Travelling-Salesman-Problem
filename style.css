@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+#body {
+  height: 100vh;
+  background-color: black;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+  height: 10vh;
+}
+#header input, #header button {
+  border: none;
+  width: 60px;
+  height: 40px;
+  font-weight: 900;
+  font-size: 1.2em;
+  border-radius: 50px;
+  background: linear-gradient(-90deg, rgb(62, 207, 255), rgb(43, 0, 255));
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#header button:hover {
+    transform: scale(1.2);
+}
+#header input {
+  margin-right: 10px;
+  text-align: center;
+  color: black;
+  cursor:text;
+  background: white;
+}
+#title {
+  font-size: 2em;
+  font-weight: 600;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5vw;
+  height: 90vh;
+}
+#menu1,
+#menu2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  height: 506px;
+}
+#map {
+  width: 500px;
+  height: 500px;
+  border: solid 3px white;
+  background-image: repeating-linear-gradient(#ccc 0 1px, transparent 1px 100%),
+    repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100%);
+  background-size: 25px 25px;
+}
+#layers {
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(rgb(60, 0, 255) 0 2px, transparent 2px 100%),
+  repeating-linear-gradient(90deg, rgb(60, 0, 255) 0 2px, transparent 2px 100%);
+  background-size: 125px 125px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.form label {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.form input,
+.form p,
+.form button {
+  padding: 10px;
+  border-radius: 50px;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  font-weight: 900;
+  border: none;
+  color: black;
+}
+.form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-90deg, rgb(62, 207, 255), rgb(43, 0, 255));
+  color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.form button:hover {
+  transform: scale(1.15) rotate(45deg);
+}
+.dot {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+.dot:hover {
+  transform: scale(1.15);
+}
+#dotMenu, #dotMenu2 {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 2%;
+  grid-row-gap: 10px;
+}
+.dotDiv, .dotDiv2 {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  gap: 5px;
+}
+.dotText, .dotText2 {
+  border-radius: 50px;
+  background-color: white;
+  height: 20px;
+  width: 60%;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+.dotInput, .dotButton2 {
+  text-align: center;
+  border: none;
+  width: 20px;
+  font-weight: 900;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+.dotButton2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  font-size: 1.2em;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.dotButton2:hover {
+  transform: scale(1.15);
+}
+.line {
+  position: absolute;
+  height: 10px;
+  border-radius: 50px;
+  background-color: rgb(255, 0, 0);
+}

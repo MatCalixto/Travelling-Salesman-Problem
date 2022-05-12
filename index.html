@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling Salesman Problem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header id="header">
+      <p id="title">Travelling Salesman Problem Vizualization</p>
+      <form id="headerForm">
+        <input id="runInput" type="text" />
+        <button onClick="run()">Run</button>
+      </form>
+    </header>
+    <main id="main">
+      <div id="menu1">
+        <form class="form">
+          <label>Add Dot</label>
+          <div class="row">
+            <input id="addInput" type="text" />
+            <button onClick="addDot()">+</button>
+          </div>
+        </form>
+        <div id="dotMenu"></div>
+      </div>
+      <div id="map">
+        <div id="layers"></div>
+      </div>
+      <div id="menu2">
+        <form class="form">
+          <label>Save Sum</label>
+          <div class="row">
+            <p id="addSum">Sum</p>
+            <button onClick="saveSum()">+</button>
+          </div>
+        </form>
+        <div id="dotMenu2"></div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
