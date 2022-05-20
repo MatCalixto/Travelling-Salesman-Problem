@@ -218,11 +218,6 @@ function createMap(a) {
     addSum.textContent = sum.toFixed(4);
     if (a == 1) {
         a = 0
-        // Solving Algorithm
-        // Lines Shall Not Cross
-        // Each Dot is Connected to Two Other Dots
-        // Not the Smallest Area, Biggest Area nor Polsby-Popper
-        // Internal Angles, maybe Biggest Sum of Internal Angles
         function swap(index1, index2) {
             let placeHolder = dotList[index1 - 1]
             dotList[index1 - 1] = dotList[index2 - 1]
